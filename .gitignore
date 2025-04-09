@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.env
+
+# Docker
+**/node_modules
+
+# Virtual Environment
+venv/
+env/
+
+# IDE Specific
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Local Development
+.env
+.env.local
+
+# Build artifacts
+build/
+dist/
