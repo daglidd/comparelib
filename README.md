@@ -34,17 +34,35 @@ CompareLib is a web application that allows you to compare the output of three d
    python app.py
    ```
 
+
 ### Docker
-1. Set your Firecrawl API key in `docker-compose.yml` or a `.env` file:
-   ```env
-   FIRECRAWL_API_KEY=fc-xxxxxx
-   ```
-2. Build and run:
-   ```sh
-   docker compose build
-   docker compose up
-   ```
-3. Visit [http://localhost:5001](http://localhost:5001)
+
+#### 1. Set your Firecrawl API key
+You can set your API key in either `docker-compose.yml` under the `environment:` section, or in a `.env` file in the project root:
+
+**.env example:**
+```env
+FIRECRAWL_API_KEY=fc-xxxxxx
+```
+
+**docker-compose.yml example:**
+```yaml
+environment:
+   - FIRECRAWL_API_KEY=fc-xxxxxx
+```
+
+#### 2. Build the Docker image
+```sh
+docker compose build
+```
+
+#### 3. Run the app
+```sh
+docker compose up
+```
+
+#### 4. Access the app
+Open your browser and go to [http://localhost:5001](http://localhost:5001)
 
 ## Usage
 - Enter a website URL in the input box and click "Scrape".
