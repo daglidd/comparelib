@@ -8,3 +8,4 @@ services:
     restart: unless-stopped
     environment:
       - FLASK_ENV=production
+      - FIRECRAWL_API_KEY=fc-f9bd6b9f70cf4b379281bfce7a6d4dec
